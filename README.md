@@ -1,6 +1,5 @@
 # Problem Statement 
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
-
+This dataset is about classifying of a mushroom. This data science problem's domain is research field. This dataset contains 23 species of mushrooms and each of them are identified as poisonous or edible. 
 
 
 ## Dataset
@@ -11,25 +10,16 @@ Since the target of this project is to find if the mushroom is poisonous or not,
 
 The 2 class labels are:
 <br>
-
-**1. Iris Setosa:** Given iris flower belongs to the Setosa species
+**1. Poisonous:** Given mushroom is poisonous.
 <br>
-**2. Iris Virginica:** Given iris flower belongs to the Virginica species
-<br>
-**3. Iris Versicolor:** Given iris flower belongs to the Versicolor species
+**2. Edible:** Given mushroom is edible.
 
 
 ## Model(s) Used
+The models used for this task are Logistic Regression, Naive Bayes and Decision tree.
 
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
+**-Logistic Regression** is a supervised machine learning model. It is used to predict a categorial target value using the predictors on the basis of probability. This model is fitted into the logistic function.
 
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
-<br>
+**-Naive Bayes** is a supervised machine learning model. This model is based on Bayes theorem and assumes that the features are unrelated to each others. It calculates the probability and choses the class with the highest probability.
 
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
-
-
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
-
-## Future Work
-Good ideas or strategies that you were not able to implement which you think can help  improve performance.
+**-Decision Tree** is a supervised machine learning model. The Decision tree works by spliting the data into tree-like structure.
